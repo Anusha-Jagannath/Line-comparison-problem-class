@@ -29,7 +29,7 @@ public class Main {
 		q2 = s1.nextInt();
 
 		LineComparison line = new LineComparison(x1, y1, x2, y2, p1, q1, p2, q2);
-		line.equalTo();
+		line.compareTo();
 
 	}
 
