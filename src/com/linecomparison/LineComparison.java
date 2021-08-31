@@ -21,9 +21,15 @@ public class LineComparison {
 	public void compareTo() {
 		Double distance1 = new Double(Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
 		Double distance2 = new Double(Math.sqrt((p2 - p1) * (p2 - p1) + (q2 - q1) * (q2 - q1)));
-
+		
 		System.out.println("Distance between two points of line1 is " + distance1);
 		System.out.println("Distance between two points of line2 is " + distance2);
+		
+		//comparison using equal()
+		if(distance1.equals(distance2))
+			System.out.println("Both lines are equal");
+		else
+			System.out.println("Both lines are not equal");
 
 		// comparison using compareTo()
 		int res = distance1.compareTo(distance2);
